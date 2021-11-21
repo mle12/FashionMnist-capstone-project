@@ -25,7 +25,7 @@ Training set :50000 images
 Validation set :10000 images
 Test Set :10000 images
 
-As this is a computer vision problem my plan was to implement a Convolutional Neural network(CNN). The Keras layers API within Tensorflow is a straightforward way to build the various sections of a CNN architecture. There is a vast number of possible architectures I could have used but I decided to settle with a relatively simple one and then see if I could improve on it.
+As this is a computer vision problem my plan was to implement a Convolutional Neural Network(CNN). The Keras layers API within Tensorflow is a straightforward way to build the various sections of a CNN architecture. There are a vast number of possible architectures I could have used but I decided to settle with a relatively simple one and then see if I could improve on it.
 
 To reduce overfitting (the inablity to generalise to unseen data) in my model I added a dropout layer. Also as this was a multi class classification problem with 10 outputs or categories of clothing, I used a softmax activation function as the final step of my CNN. The ideal loss function for this type of multi class classification is SparseCatgoricalCrossentropy and I chose to use the Adam optimizer to train the CNN. 
 
