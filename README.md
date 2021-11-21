@@ -1,4 +1,4 @@
-# FashionMnist-capstone-project
+# FashionMnist-Capstone-Project
 Capstone Project- Fashion MNIST Clothing Classification
 
 
