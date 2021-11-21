@@ -2,7 +2,7 @@
 Capstone Project- Fashion MNIST Clothing Classification
 
 
- The ability to classify images correctly is particularly useful in the world of e commerce. Computer vision models can be used in similarity search where site visitors are given exact or similar matches to what they have searched for. This in turn can prolong the engagement of visitors and increase sales. Automatic image tagging is also a useful application enabling clothing to be correctly labelled and found on websites with large and extensive inventory.
+ The ability to classify images correctly is particularly useful in the world of E-commerce. Computer vision models can be used in similarity search where site visitors are given exact or similar matches to what they have searched for. This in turn can prolong the engagement of visitors and increase sales. Automatic image tagging is also a useful application enabling clothing to be correctly labelled and found on websites with large and extensive inventory.
 
 The task of this project is to develop a Machine Learning model to correctly classify photos of clothing.
 The model will be trained on the well known Fashion MNIST dataset. This comprises 60000 photos that will be used for the training dataset and 10000 images for the test dataset. The photos are 28X28 pixel grayscale images of 10 types of clothing belonging to the following categories 
@@ -32,7 +32,7 @@ To reduce overfitting (the inablity to generalise to unseen data) in my model I 
 Next I trained the model and used the validation dataset to monitor how the model was learning. 
 I decided to use 50 epochs or cycles through the data to make sure the accuracy metric would converge. I then plotted training and validation curves for 'loss' and 'accuracy' to see how the model was learning. The goal was for 'loss' to be as close to 0 as possible and 'accuracy' to be as close to 100 as possible.
 
-The graphs revealed that the initial model did very well on the training data getting around 99% accuracy. However the model did not iperform as well on the validation or test data getting around 91% accuracy. Also the validation accuracy failed to improve after 5 epochs. It looked like the model had low bias but high variance indicating overfitting or lack of generalisation to unseen data.  I then took a batch of 12 examples from the test data and visualised the input image and the predicted labels. This revealed the model only incorrectly classified 1 out of 12 images.
+The graphs revealed that the initial model did very well on the training data getting around 99% accuracy. However the model did not perform as well on the validation or test data getting around 91% accuracy. Also the validation accuracy failed to improve after 5 epochs. It looked like the model had low bias but high variance indicating overfitting or lack of generalisation to unseen data.  I then took a batch of 12 examples from the test data and visualised the input images and the predicted labels. This revealed the model only incorrectly classified 1 out of 12 images.
 
 I next decided to use a more complex architecture with the aim of improving accuracy and to reduce overfitting. I settled on the well known ResNet50 architecture. This new model had some 26 million parameters to train versus the initial model with only around 3 million. This meant this model would take longer to train and be more computationally expensive but would it improve the accuracy?
 
